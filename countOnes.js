@@ -2,7 +2,20 @@
 
 
 // your code here
+const countOnes = function(arr) {
 
+    let count = 0;
+
+    for(r = 0; r < arr.length; r++) {
+        for(c = 0; c < arr[r].length; c++) {
+            if(arr[r][c] === 1) {
+                count++;
+            }
+        }
+    }
+
+    return count;
+}
 
 console.log(countOnes([
     [1, 0],

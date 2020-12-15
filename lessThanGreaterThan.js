@@ -2,7 +2,18 @@
 //returns an array containing all the numbers in arr greater than num1 and less than num2.
 
 //your code here
+const arrBetween = function (num1, num2, arr) {
 
+    let newArr = [];
+
+    for(i = 0; i < arr.length; i++) {
+        if (arr[i] > num1 && arr[i] < num2) {
+            newArr.push(arr[i]);
+        }
+    }
+
+    return newArr;
+}
 
 
 
